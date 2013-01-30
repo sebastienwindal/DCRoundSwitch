@@ -163,6 +163,11 @@
 	[self positionLayersAndMask];
 }
 
+-(void) setFont:(UIFont *)font
+{
+    self.toggleLayer.labelFont = font;
+}
+
 #pragma mark -
 #pragma mark Setup Frame/Layout
 

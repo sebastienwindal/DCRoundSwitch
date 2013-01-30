@@ -1,3 +1,7 @@
+Fork of domesticcatsoftware/DCRoundSwitch that adds support for custom font.
+
+```[self.switch3 setFont:[UIFont fontWithName:@"AvenirNext-DemiBold" size:12.0f]];```
+
 DCRoundSwitch
 ============
 

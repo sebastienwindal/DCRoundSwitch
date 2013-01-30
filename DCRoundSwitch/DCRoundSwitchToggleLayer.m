@@ -15,7 +15,7 @@
 @synthesize onString, offString, onTintColor;
 @synthesize drawOnTint;
 @synthesize clip;
-@synthesize labelFont;
+@synthesize labelFont = _labelFont;
 
 - (void)dealloc
 {
@@ -40,7 +40,10 @@
 
 - (UIFont *)labelFont
 {
-	return [UIFont boldSystemFontOfSize:ceilf(self.bounds.size.height * .6)];
+	if (_labelFont == nil) {
+        _labelFont = [UIFont boldSystemFontOfSize:ceilf(self.bounds.size.height * .6)];
+    }
+    return  _labelFont;
 }
 
 - (void)drawInContext:(CGContextRef)context

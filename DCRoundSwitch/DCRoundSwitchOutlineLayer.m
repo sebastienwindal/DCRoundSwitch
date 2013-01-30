@@ -13,6 +13,7 @@
 
 @implementation DCRoundSwitchOutlineLayer
 
+
 - (void)drawInContext:(CGContextRef)context
 {
 	// calculate the outline clip

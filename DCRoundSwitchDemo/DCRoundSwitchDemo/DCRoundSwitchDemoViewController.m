@@ -48,6 +48,7 @@
 
 	self.switch3.onTintColor = [UIColor blackColor];
 	self.switch3.on = YES;
+    [self.switch3 setFont:[UIFont fontWithName:@"AvenirNext-DemiBold" size:12.0f]];
 	[self.switch3 addTarget:self action:@selector(switch3Toggled:) forControlEvents:UIControlEventValueChanged];
 
 	self.fatSwitch.onText = @"1";
